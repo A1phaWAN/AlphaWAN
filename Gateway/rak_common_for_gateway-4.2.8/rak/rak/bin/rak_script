@@ -1,0 +1,75 @@
+#!/bin/bash
+
+SCRIPT_COMMON_FILE=/usr/local/rak/shell_script/rak_common.sh
+source $SCRIPT_COMMON_FILE
+
+systemctl stop serial-getty@ttyAMA0.service
+
+/usr/local/rak/bin/rak_for_ttn.sh
+
+if [ -f "/boot/rak_ap" ]; then
+        echo "ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1" > /etc/wpa_supplicant/wpa_supplicant.conf
+        rm -rf /boot/rak_ap
+        cp /usr/local/rak/ap/create_ap_bak.conf /usr/local/rak/ap/create_ap.conf
+        systemctl enable create_ap.service
+        write_json_wifi_mode 1
+        reboot
+fi
+
+# first boot, add gateway_id to loraserver
+if [ -f "/usr/local/rak/first_boot/init_loraserver_db" ]; then
+        rpi_model=`do_get_rpi_model`
+        if [ $rpi_model -ne 3 ] && [ $rpi_model -ne 4 ]; then
+            echo_warn "ChirpStack is not support for this rpi model."
+            systemctl disable chirpstack-application-server
+            systemctl disable chirpstack-gateway-bridge
+            systemctl disable chirpstack-network-server
+            systemctl disable postgresql
+            systemctl disable redis-server
+            systemctl disable mosquitto
+            write_json_chirpstack_install 0
+            #exit 0
+        else
+            cd /usr/local/rak/first_boot
+            sudo ./init_loraserver_db
+        fi
+
+        mv /usr/local/rak/first_boot/init_loraserver_db /usr/local/rak/first_boot/init_loraserver_db_bak
+fi
+
+# first boot, set ssid
+if [ -f "/usr/local/rak/first_boot/set_ssid" ]; then
+        cd /usr/local/rak/first_boot
+        sudo ./set_ssid
+        cp /usr/local/rak/ap/create_ap.conf /usr/local/rak/ap/create_ap_bak.conf
+        mv /usr/local/rak/first_boot/set_ssid /usr/local/rak/first_boot/set_ssid_bak
+fi
+
+if [ -f "/usr/local/rak/first_boot/copy_pkt_fwd" ]; then
+        cd /usr/local/rak/first_boot
+        sudo ./copy_pkt_fwd
+        mv /usr/local/rak/first_boot/copy_pkt_fwd /usr/local/rak/first_boot/copy_pkt_fwd_bak
+fi
+
+# first boot, expand sd card
+if [ -f "/usr/local/rak/first_boot/expand_rootfs.sh" ]; then
+        /usr/local/rak/first_boot/expand_rootfs.sh
+        mv /usr/local/rak/first_boot/expand_rootfs.sh /usr/local/rak/first_boot/expand_rootfs_bak.sh
+        reboot
+fi
+
+GW_MODEL=`do_get_gw_model`
+INSTALL_LTE=`do_get_gw_install_lte`
+# active lte
+if [ "$INSTALL_LTE" = "1" ]; then
+    pushd /usr/local/rak/bin
+    ./active_lte_module.sh
+#    ./ppp.sh &
+#    if [ -f "/usr/local/rak/bin/quectel.sh" ]; then
+#        ./quectel.sh &
+#    fi
+    popd
+fi
+
+
