@@ -43,7 +43,9 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 
 **Note:** You can also via SSH to configure gateway channel configurations. 
 
-## 4. Firmware Update by Wisgate os2
+## 4. Firmware Update 
+### Manual Update
+If you want to update the firmware manually, you can only do it through **Wisgate OS2**.
 
 1. Download  the latest firmware of the gateway and unzip it.
 
@@ -74,6 +76,11 @@ The firmware update option will be locked because it is centrally managed by Wis
 - Save the settings.  
 
 Once FOTA is disabled, the firmware update option in the **Firmware tab** will be unlocked, and you can proceed with the manual update.
+
+### Automatic Updates
+
+turned on **Enable FOTA** on WisDM.
+
 #### **You can update your deivces through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
 Please review this **[document](https://docs.rakwireless.com/product-categories/software-apis-and-libraries/wisgateos2/overview/#how-to-upgrade-firmware)** in detail.  
 
