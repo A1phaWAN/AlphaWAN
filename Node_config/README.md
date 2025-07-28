@@ -68,28 +68,28 @@ static CONST_TABLE(u4_t, iniChannelFreq)[NUM_DEFAULT_CHANNELS] = {
 
 Ensure only the selected subset of frequencies are enabled for AlphaWAN. Disable default TTN/LoRaWAN frequencies if necessary.
 
-### 5.4 Compile and Upload
+### 4.4 Compile and Upload
 
 Use the Arduino IDE to compile `AlphaWAN_Node.ino` and upload to the device.
 
 
-## 6. Validation and Testing
+## 5. Validation and Testing
 
 - Monitor ChirpStack for join requests and uplink messages
 - Check the gateway log for packet reception and channel mapping
 - Validate duty cycle compliance in your experimental setup
 
-## 7. Notes
+## 6. Notes
 
 - Uplink interval and payload size must adhere to the regional duty cycle rules
 - For multi-node testing, ensure DevEUIs and channels are unique to avoid collisions
 
 
-## 8. Troubleshooting
+## 7. Troubleshooting
 
 | Issue | Solution |
 | --- | --- |
-| Node fails to join | Confirm keys in `AlphaWAN_Node.ino` match ChirpStack registration |
+| Node fails to join | Confirm keys in `Join-TTN-network.ino` match ChirpStack registration |
 | Messages not received | Check `lmic_as923.c` and match with gateway channel frequencies |
 | Duty cycle violation | Reduce uplink frequency and packet size |
 
