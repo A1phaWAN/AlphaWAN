@@ -79,10 +79,11 @@ Once FOTA is disabled, the firmware update option in the **Firmware tab** will b
 
 ### Automatic Updates
 
-turned on **Enable FOTA** on WisDM.
+Turned on **Enable FOTA** on WisDM.
 
-#### **You can update your deivces through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
-Please review this **[document](https://docs.rakwireless.com/product-categories/software-apis-and-libraries/wisgateos2/overview/#how-to-upgrade-firmware)** in detail.  
+#### **You can get the firmware package through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
+
+#### For more details on firmware updates, please refer to this document **[document](https://docs.rakwireless.com/product-categories/software-apis-and-libraries/wisgateos2/overview/#how-to-upgrade-firmware)**.  
 
 
 ## References
