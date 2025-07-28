@@ -44,5 +44,5 @@ Use `gw_config.json` from the channel planner to assign frequencies.
 
 ## References
 
-- RAK7268 User Manual
-- ChirpStack Gateway Bridge Docs
+- [RAK7268 User Manual](https://docs.rakwireless.com/product-categories/wisgate/rak7268v2/quickstart/)
+- [ChirpStack Gateway Bridge Docs](https://www.chirpstack.io/docs/guides/connect-gateway.html)
