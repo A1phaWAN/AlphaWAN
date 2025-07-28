@@ -11,8 +11,8 @@ We include setup guides for the **network server**, **gateways**, and **nodes**.
 ```graphql
 AlphaWAN/
 ├── Network_server/        # ChirpStack deployment and example for channel planning
-├── Gateway_cfg/        # Instructions for configuring RAK7268 gateways
-├── Node_cfg/           # End-node codes and setup guide
+├── Gateway_cfg/           # Instructions for configuring RAK7268 gateways
+├── Node_cfg/              # End-node codes and setup guide
 ├── Evaluation/            # Scripts and data for results reproduction
 └── README.md              # This file
 ```
