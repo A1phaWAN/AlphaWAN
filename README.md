@@ -48,7 +48,7 @@ If you're new, follow the manual in each directory:
 
 ## Reproducing Results
 
-If you don’t have enough experimental devices, you can still evaluate AlphaWAN through our provided data traces and experiment scripts under `Evaluation/`. Refer to readme in the corresponding folders for details.
+If you don’t have enough experimental devices, you can evaluate AlphaWAN through our provided data traces and experiment scripts under `Evaluation/`. Refer to readme in the corresponding folders for details.
 
 ### Contact
 
