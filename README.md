@@ -27,7 +27,6 @@ If you're new, follow the manual in each directory:
 4. Evaluate with trace or hardware
 
 ## Requirements
-
 ### 🔩 Hardware
 
 - **Server**: A workstation with Ethernet/WiFi connectivity for gateway backhaul and ChirpStack hosting.
