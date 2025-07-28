@@ -93,3 +93,8 @@ Use the Arduino IDE to compile `AlphaWAN_Node.ino` and upload to the device.
 
 
 For advanced modifications or adding support for downlink responses, refer to the LMIC documentation or extend `AlphaWAN_Node.ino` accordingly.
+
+## References
+
+- [MCCI Arduino LoRaWAN Library](https://github.com/mcci-catena/arduino-lorawan)
+- [LA66 LoRaWAN Shield User Manual](https://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/LA66%20LoRaWAN%20Shield%20User%20Manual/#H1.5A0Example:UseATCommandtocommunicatewithLA66moduleviaArduinoUNO.)

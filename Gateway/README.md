@@ -29,7 +29,7 @@ Check ChirpStack → Gateways tab to confirm it is connected.
 
 ## 3. Apply Channel Configurations
 
-Use `gw_config.json` from the channel planner to assign frequencies.
+Use `gw_config.csv` from the channel planner to assign frequencies.
 
 ### Method A: Local Console (Web UI)
 
@@ -48,3 +48,4 @@ Use `gw_config.json` from the channel planner to assign frequencies.
 
 - [RAK7268 User Manual](https://docs.rakwireless.com/product-categories/wisgate/rak7268v2/quickstart/)
 - [ChirpStack Gateway Bridge Docs](https://www.chirpstack.io/docs/guides/connect-gateway.html)
+- [WisDM Management Platform](https://www.rakwireless.com/en-us/products/wisdm)
