@@ -44,11 +44,39 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 
 **Note:** You can also via SSH to configure gateway channel configurations. 
 
-## 4. Firmware Update
+## 4. Firmware Update by Wisgate os2
+
+1. Download  the latest firmware of the gateway and unzip it.
+
+2. Drag and drop the file in the Drop your RWI file here or choose file form, or click the choose file link to browse for the file `.rwi`.
+
+3. Drag and drop the file in the Drop your RWI file here or choose file form, or click the choose file link to browse for the file.
+
+4. Click Update to initiate the flashing process.
+
+5. After the upgrade is complete, log in to the gateway and check the Firmware tab to confirm that the installed firmware version is correct.
+
+#### **Why Can't I Upgrade?**
+
+If you are unable to update the firmware from the **Firmware tab**, it may be because the update is managed by WisDM.
+
+**if the gateway is:**
+
+- **Registered in WisDM**  
+- **Allow WisDM Integration** is enabled  
+- **Enable FOTA** is turned on  
+The firmware update option will be locked because it is centrally managed by WisDM.
+
+**To enable manual firmware updates:**
+
+- Go to **WisDM tab**.  
+- Turn off **Enable FOTA**.  
+- Save the settings.  
+
+Once FOTA is disabled, the firmware update option in the **Firmware tab** will be unlocked, and you can proceed with the manual update.
 #### **You can update your deivces through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
 Please review this **[document](https://docs.rakwireless.com/product-categories/software-apis-and-libraries/wisgateos2/overview/#how-to-upgrade-firmware)** in detail.  
 
-**Note:** If you want to update the firmware manually, you can only do it through Wisgate OS2 and Turn off Enable FOTA on WisDM.
 
 ## References
 
