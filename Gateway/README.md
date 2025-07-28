@@ -40,7 +40,7 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 
 1. Register your gateway on WisDM portal
 2. Go to **LoRa → Frequency Plan**
-3. Upload values based on `gw_config.json`
+3. Upload values based on `gw_config.csv`
 
 **Note:** You can also via SSH to configure gateway channel configurations. 
 
