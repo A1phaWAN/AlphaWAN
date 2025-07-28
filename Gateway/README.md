@@ -77,9 +77,13 @@ The firmware update option will be locked because it is centrally managed by Wis
 
 Once FOTA is disabled, the firmware update option in the **Firmware tab** will be unlocked, and you can proceed with the manual update.
 
+---
+
 ### Automatic Updates
 
 Turned on **Enable FOTA** on WisDM.
+
+---
 
 #### **You can get the firmware package through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
 
