@@ -31,7 +31,7 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 
 ### Method A: Local Console
 
-1. Connect to the gateway's Wi-Fi AP and access browser: [http://192.168.230.1](http://192.168.230.1/)
+1. Connect to the gateway's Wi-Fi AP and access browser: [192.168.230.1](http://192.168.230.1/)
 2. Navigate to **LoRa Settings → Channel Plan**
 3. Manually enter the frequencies for each channel slot
 
