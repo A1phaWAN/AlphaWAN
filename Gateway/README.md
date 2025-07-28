@@ -44,6 +44,8 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 
 **Note:** You can also via SSH to configure gateway channel configurations. 
 
+**You can update your deivces through [the Official Website](https://docs.rakwireless.com/firmware/), or use the files in our repository `WisGateOS2_Latest_Firmware`**
+
 ## References
 
 - [RAK7268 User Manual](https://docs.rakwireless.com/product-categories/wisgate/rak7268v2/quickstart/)
