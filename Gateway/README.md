@@ -64,6 +64,7 @@ If you are unable to update the firmware from the **Firmware tab**, it may be be
 - **Registered in WisDM**  
 - **Allow WisDM Integration** is enabled  
 - **Enable FOTA** is turned on  
+
 The firmware update option will be locked because it is centrally managed by WisDM.
 
 **To enable manual firmware updates:**
