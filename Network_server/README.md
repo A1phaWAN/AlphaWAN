@@ -56,6 +56,13 @@ This means:
 
 You can use this output to configure gateways manually or via ChirpStack.
 
+### Example
+
+```
+Channel_planning(24, 50, 13, 8)
+% 24 LoRa channels, 50 concurrent nodes, 13 gateways, 8 channels per GW
+```
+
 ## 3. ChirpStack Configuration Steps
 
 The following steps guide you through basic ChirpStack configuration. For full documentation, refer to ChirpStack Docs.
