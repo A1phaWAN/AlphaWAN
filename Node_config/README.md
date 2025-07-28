@@ -1,6 +1,6 @@
-# 📂 `Node_config/README.md`
+# End Devices Configuration
 
-This document provides a step-by-step guide to configuring LoRaWAN end devices (nodes) to work with the AlphaWAN deployment, including modified channel plans, duty cycle settings, and frequency configurations. This guide assumes you have already completed the deployment of the network server and gateways as described in previous sections.
+This document provides a step-by-step guide to configure LoRaWAN end devices (nodes) to work with the AlphaWAN deployment, including modified channel plans, duty cycle settings, and frequency configurations. This guide assumes you have already completed the deployment of the network server and gateways as described in previous sections.
 
 
 ## 1. Hardware Requirements
