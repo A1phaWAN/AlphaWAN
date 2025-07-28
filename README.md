@@ -22,9 +22,9 @@ AlphaWAN/
 If you're new, follow the manual in each directory:
 
 1. [Set up ChirpStack and run channel planning](https://github.com/A1phaWAN/AlphaWAN/blob/main/Network_server/README.md)
-2. Configure your gateways
-3. Deploy end devices
-4. Evaluate with trace or hardware
+2. [Configure your gateways](https://github.com/A1phaWAN/AlphaWAN/blob/main/Gateway/README.md)
+3. [Deploy end devices](https://github.com/A1phaWAN/AlphaWAN/blob/main/Node_config/README.md)
+4. [Evaluate with trace or hardware](https://github.com/A1phaWAN/AlphaWAN/blob/main/Evaluation/README.md)
 
 ## Requirements
 ### 🔩 Hardware
