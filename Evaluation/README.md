@@ -25,7 +25,7 @@ This directory contains the script and data necessary to reproduce the evaluatio
     - Run the script:
         
         ```matlab
-        Maximum_capability
+        Maximum_capability.m
         ```
         
     - The script loads experiment traces from the `Collected_data` folder and processes them to generate evaluation plots.
@@ -74,53 +74,3 @@ We provide an example channel planning script to generate gateway-specific confi
     
 
 This script outputs a `gw_config.csv` file which contains optimized channel settings for each gateway. The inputs can be adjusted to reflect your deployment topology, including each Gateway’s channel configurations
-
-### 2️⃣ Apply Gateway Channel Plans
-
-### 2.1 Connect Gateways to Chirpstack
-
-- Ensure each gateways (e.g., RAK7268) have:
-    - Internet access (via Ethernet or Wi-Fi)
-    - Proper packet forwarder configuration to forward UDP packets to the host running ChirpStack
-    - Registered **Gateway ID** (EUI) in ChirpStack Web UI
-
-For RAK gateways:
-
-- Log into the web interface (usually `192.168.230.1`)
-- Under **LoRa Packet Forwarder**, set:
-    - **Server address** = your ChirpStack server IP
-    - **Ports**: `1700` (default UDP port)
-    - Save and reboot the gateway
-
-### 2.2 Configure Gateways (RAK7268 Examples)
-
-**Method A: Local Console Configuration**
-
-1. Connect to gateway Wi-Fi (model name and No. )
-2. Connect to gateway IP in browser (default: `192.168.230.1`)
-3. LoRa → Channel Settings
-4. Manually configure frequencies based on `gw_config.csv`
-
-**Method B: Remote Management via WisDM**
-
-1. Register the gateway on WisDM
-2. Navigate to LoRa Settings → Frequency Plan
-3. Apply channel configurations from `gw_config.csv`
-
-> For other gateway models, refer to their vendor documentation. AlphaWAN is compatible with any COTS LoRaWAN gateways supporting channel config updates.
-> 
-
-### 3️⃣ Deploy Nodes and Observe Performance
-
-### Setup
-
-- Compile codes from `Node_config/` to SX1276 + Arduino boards
-- Register each device in ChirpStack
-- Confirm OTAA join or ABP registration
-
-### Experiment
-
-- Power up all nodes
-- Check ChirpStack “Live LoRaWAN Frames” to confirm reception
-- Download gateway logs to see received packets
-- Evaluate packet reception under different loads and interference
