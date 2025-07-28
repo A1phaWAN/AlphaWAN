@@ -50,7 +50,7 @@ If you're new, follow the manual in each directory:
 
 If you don’t have enough experimental devices, you can evaluate AlphaWAN through our provided data traces and experiment scripts under `Evaluation/`. Refer to readme in the corresponding folders for details.
 
-### Contact
+## Contact
 
 For questions, issues, or requests, please contact:
 
@@ -58,7 +58,7 @@ Ziyue Zhang - ziyue.zhang@connect.polyu.hk
 
 Ruonan Li - ruo-nan.li@connect.polyu.hk
 
-### Citation
+## Citation
 
 ```bibtex
 @inproceedings{Zhang2025AlphaWAN,
