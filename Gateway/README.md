@@ -59,9 +59,9 @@ If you want to update the firmware manually, you can only do it through **Wisgat
 
 ---
 
-#### **Why Can't I Upgrade?**
+#### **Q: Why Can't I Upgrade?**
 
-If you are unable to update the firmware from the **Firmware tab**, it may be because the update is managed by WisDM.
+**A:** If you are unable to update the firmware from the **Firmware tab**, it may be because the update is managed by WisDM.
 
 **if the gateway is:**
 
