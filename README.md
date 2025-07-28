@@ -60,12 +60,18 @@ Ziyue Zhang - ziyue.zhang@connect.polyu.hk
 Ruonan Li - ruo-nan.li@connect.polyu.hk
 
 ### Citation
- @inproceedings{Zhang2025AlphaWAN,
- title={Towards Next-Generation Global IoT: Empowering Massive Connectivity with Harmonious Multi-Network Coexistence},
- author={Ziyue Zhang, Xianjin Xia, Ruonan Li, and Yuanqing Zheng},
- booktitle={Proceedings of the ACM SIGCOMM 2025 Conference},
- year={2025},
- doi = {https://doi.org/10.1145/3718958.3750504}
+ @inproceedings{Zhang2025AlphaWAN,  
+
+ title={Towards Next-Generation Global IoT: Empowering Massive Connectivity with Harmonious Multi-Network Coexistence},  
+
+ author={Ziyue Zhang, Xianjin Xia, Ruonan Li, and Yuanqing Zheng},  
+
+ booktitle={Proceedings of the ACM SIGCOMM 2025 Conference},  
+
+ year={2025},  
+
+ doi = {https://doi.org/10.1145/3718958.3750504}  
+ 
  }
 
 ## Deployment Guide
