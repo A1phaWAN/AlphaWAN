@@ -37,9 +37,13 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 4. Choose the **Work Mode** according to your server type.
 
 **Note:** For different server configuration methods, please refer to this **[document](https://docs.rakwireless.com.cn/Product-Categories/WisGate/RAK7268-V2/Supported-LoRa-Network-Servers/)**.
+
 5. Scroll down to find **Frequency Plan**, Select your country or region to choose the radio frequency band
+
 6. Manually enter the frequencies for each channel slot(if need, usually automatically configured)
+
 7. Click **Save changes** to save the changes.
+
 8. Upload values based on `gw_config.csv`
 
 **Note:** `gw_config.csv` is used to indicate which channels each gateway uses.
@@ -50,13 +54,19 @@ Use `gw_config.csv` from the channel planner to assign frequencies.
 ### Method B: Remote via WisDM
 
 1. Register your gateway on WisDM portal
+
 2. Create an Organization and fill in some basic information for the organization.
+
 3. Add a location by clicking the **New Location** button.
+
 4. Choose the **Work Mode** and the band that the **Region** will operate on
 
 **Note:** For different server configuration methods, please refer to this **[document](https://docs.rakwireless.com.cn/Product-Categories/WisGate/RAK7268-V2/Supported-LoRa-Network-Servers/)**.
+
 5. Click the **Advanced frequency settings** button and manually enter the frequencies for each channel slot(if need, usually automatically configured)
+
 6. Click **Save changes** to save the changes.
+
 7. Upload values based on `gw_config.csv`
 
 **Note:** `gw_config.csv` is used to indicate which channels each gateway uses.
