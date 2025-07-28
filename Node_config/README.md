@@ -17,7 +17,7 @@ This node firmware depends on the [MCCI LoRaWAN LMIC library](https://github.com
 
 1. Open Arduino IDE
 2. Go to **Tools > Manage Libraries...**
-3. Search for **"MCCI LoRaWAN LMIC"**
+3. Search for **"MCCI LoRaWAN LMIC"** and choose **"MCCI LoRaWAN LMIC Library"**
 4. Click **Install**
 
 Or, clone it directly into your `libraries/` folder:
