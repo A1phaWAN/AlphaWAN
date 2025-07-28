@@ -1,7 +1,5 @@
 # **Towards Next-Generation Global IoT: Empowering Massive Connectivity with Harmonious Multi-Network Coexistence**
 
----
-
 ## Overview
 
 AlphaWAN addresses the decoder contention problem in LoRaWANs, enhancing capacity and coexistence among networks. This repository contains the key components, deployment instructions, and evaluation scripts to implement AlphaWAN and reproduce the results presented in our SIGCOMM 2025 paper.
@@ -30,8 +28,6 @@ If you're new, follow the manual in each directory:
 
 ## Requirements
 
----
-
 ### 🔩 Hardware
 
 - **Server**: A workstation with Ethernet/WiFi connectivity for gateway backhaul and ChirpStack hosting.
@@ -59,8 +55,6 @@ If you don’t have enough experimental devices, you can still evaluate AlphaWAN
 
 ### Contact
 
----
-
 For questions, issues, or requests, please contact:
 
 Ziyue Zhang - ziyue.zhang@connect.polyu.hk
@@ -73,8 +67,6 @@ Ruonan Li - ruo-nan.li@connect.polyu.hk
 
 ## Deployment Guide
 
----
-
 ## Network Server Deployment and Channel Planning Manual
 
 This guide explains how to set up the ChirpStack LoRaWAN network server and run AlphaWAN's channel planning program. You will launch the server stack using Docker and generate gateway-specific channel configurations. Two network server files are included in this folder for reference, for more issues please access [Chirpstack official website](https://www.chirpstack.io/docs/index.html) for details. 
@@ -85,7 +77,6 @@ This guide explains how to set up the ChirpStack LoRaWAN network server and run 
 - Python 3.8+
 - Git
 
----
 
 ## 1. Clone Repository and Launch ChirpStack
 
@@ -110,7 +101,6 @@ Default credentials:
 - Email: `admin@chirpstack.io`
 - Password: `admin`
 
----
 
 ## 2. Run Channel Planning Program
 
@@ -134,8 +124,6 @@ This means:
 - `gw_config.csv`: Optimized channel assignments for each gateway
 
 You can use this output to configure gateways manually or via ChirpStack.
-
----
 
 ## 3. ChirpStack Configuration Steps
 
@@ -175,5 +163,3 @@ The following steps guide you through basic ChirpStack configuration. For full d
 After registering devices and powering on nodes, you can verify uplinks in the **Live LoRaWAN Frames** tab.
 
 Now you're ready to proceed to the gateway and node setup.
-
----
