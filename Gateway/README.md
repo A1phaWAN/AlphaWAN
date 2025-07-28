@@ -1,10 +1,8 @@
-# 📂 `Gateway_config/README.md`
-
-## 📶 Gateway Setup Guide (RAK7268)
+# Gateway Setup Guide (RAK7268)
 
 This guide explains how to configure RAK7268 gateways for use in AlphaWAN. We provide two alternative methods: (1) Local console configuration and (2) Remote configuration. These steps assume you have already deployed the ChirpStack Network Server (see `../Network_server/README.md`) and completed channel planning.
 
-### ✅ Prerequisites
+## Prerequisites
 
 - RAK7268 powered on
 - Computer connected via Wi-Fi or LAN
@@ -31,10 +29,11 @@ Check ChirpStack → Gateways tab to confirm it is connected.
 
 Use `gw_config.csv` from the channel planner to assign frequencies.
 
-### Method A: Local Console (Web UI)
+### Method A: Local Console
 
-1. Navigate to **LoRa Settings → Channel Plan**
-2. Manually enter the frequencies for each channel slot
+1. Connect to the gateway's Wi-Fi AP and access browser: [192.168.230.1](http://192.168.230.1/)
+2. Navigate to **LoRa Settings → Channel Plan**
+3. Manually enter the frequencies for each channel slot
 
 ### Method B: Remote via WisDM
 

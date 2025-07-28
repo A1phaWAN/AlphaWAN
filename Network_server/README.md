@@ -1,12 +1,8 @@
-# 📂 `Network_server/README.md`
-
-## Deployment Guide
-
-## Network Server Deployment and Channel Planning Manual
+# Network Server Deployment and Channel Planning Manual
 
 This guide explains how to set up the ChirpStack LoRaWAN network server and run AlphaWAN's channel planning program. You will launch the server stack using Docker and generate gateway-specific channel configurations. Two network server files are included in this folder for reference, for more issues please access [Chirpstack official website](https://www.chirpstack.io/docs/index.html) for details. 
 
-### ✅ Prerequisites
+## Prerequisites
 
 - Docker & Docker Compose installed
 - Python 3.8+
@@ -54,11 +50,19 @@ This means:
 - `GW`: Number of deployed gateways
 - `CH_perGW`: Number of channels each gateway can support
 
+### Example
+
+```
+Channel_planning(24, 50, 13, 8)
+// 24 LoRa channels, 50 concurrent nodes, 13 gateways, 8 channels per GW
+```
+
 ### Output
 
 - `gw_config.csv`: Optimized channel assignments for each gateway
 
 You can use this output to configure gateways manually or via ChirpStack.
+
 
 ## 3. ChirpStack Configuration Steps
 
@@ -97,7 +101,7 @@ The following steps guide you through basic ChirpStack configuration. For full d
 
 After registering devices and powering on nodes, you can verify uplinks in the **Live LoRaWAN Frames** tab.
 
-Now you're ready to proceed to the gateway and node setup.
+Now you're ready to proceed to the [gateway](https://github.com/A1phaWAN/AlphaWAN/tree/main/Gateway) and [node](https://github.com/A1phaWAN/AlphaWAN/tree/main/Node_config) setup.
 
 ## References
 
