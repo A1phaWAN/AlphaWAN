@@ -101,7 +101,7 @@ The following steps guide you through basic ChirpStack configuration. For full d
 
 After registering devices and powering on nodes, you can verify uplinks in the **Live LoRaWAN Frames** tab.
 
-Now you're ready to proceed to the gateway and node setup.
+Now you're ready to proceed to the [gateway](https://github.com/A1phaWAN/AlphaWAN/tree/main/Gateway) and [node](https://github.com/A1phaWAN/AlphaWAN/tree/main/Node_config) setup.
 
 ## References
 
