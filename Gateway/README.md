@@ -2,7 +2,7 @@
 
 This guide explains how to configure RAK7268 gateways for use in AlphaWAN. We provide two alternative methods: (1) Local console configuration and (2) Remote configuration. These steps assume you have already deployed the ChirpStack Network Server (see `../Network_server/README.md`) and completed channel planning.
 
-## ✅ Prerequisites
+## Prerequisites
 
 - RAK7268 powered on
 - Computer connected via Wi-Fi or LAN
