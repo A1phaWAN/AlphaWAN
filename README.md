@@ -62,16 +62,13 @@ Ruonan Li - ruo-nan.li@connect.polyu.hk
 ### Citation
 
 ```bibtex
-@inproceedings{hydranet2025,
-  author    = {Ruonan Li and Ziyue Zhang and Xianjin Xia and Ningning Hou and 
-               Wenchang Chai and Shiming Yu and Yuanqing Zheng and Tao Gu},
-  title     = {From Interference Mitigation to Toleration: Pathway to Practical Spatial Reuse in LPWANs},
-  booktitle = {Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (ACM MobiCom ’25)},
-  year      = {2025},
-  publisher = {ACM},
-  location  = {Hong Kong, China},
-  doi       = {10.1145/3680207.3723483}
-}
+@inproceedings{Zhang2025AlphaWAN,
+ title     = {Towards Next-Generation Global IoT: Empowering Massive Connectivity with Harmonious Multi-Network Coexistence},
+ author    = {Ziyue Zhang, Xianjin Xia, Ruonan Li, and Yuanqing Zheng},
+ booktitle = {Proceedings of the ACM SIGCOMM 2025 Conference},
+ year      = {2025},
+ doi       = {https://doi.org/10.1145/3718958.3750504}
+ }
 ```
 ## Deployment Guide
 
