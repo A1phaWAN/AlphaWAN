@@ -1,4 +1,4 @@
-## Network Server Deployment and Channel Planning Manual
+# Network Server Deployment and Channel Planning Manual
 
 This guide explains how to set up the ChirpStack LoRaWAN network server and run AlphaWAN's channel planning program. You will launch the server stack using Docker and generate gateway-specific channel configurations. Two network server files are included in this folder for reference, for more issues please access [Chirpstack official website](https://www.chirpstack.io/docs/index.html) for details. 
 
