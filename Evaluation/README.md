@@ -1,14 +1,10 @@
-# 📂 `Evaluation/README.md`
-
-## 📊 Results Reproduction Guide
+# 📊 Results Reproduction Guide
 
 This directory contains the script and data necessary to reproduce the evaluation of LoRaWAN network capacity as presented in the paper.
 
-### ✅ Prerequisites
+## Prerequisites
 
 - MATLAB
-
----
 
 ### Contents:
 
