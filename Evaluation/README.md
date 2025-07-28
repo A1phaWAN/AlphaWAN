@@ -6,8 +6,6 @@ This directory contains the script and data necessary to reproduce the evaluatio
 
 - MATLAB
 
----
-
 ### Contents:
 
 - `Maximum_capability.m`: The main MATLAB script to reproduce the evaluation.
