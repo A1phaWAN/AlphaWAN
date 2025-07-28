@@ -59,9 +59,11 @@ static const u1_t APP_KEY[16] = { ... };
 Open `lmic_as923.c`. Replace the default channels with the output of channel planning code. Example:
 
 ```
-LMIC_setupChannel(0, 868100000, DR_RANGE_MAP(DR_0, DR_5), BAND_CENTI);
-LMIC_setupChannel(1, 868300000, DR_RANGE_MAP(DR_0, DR_5), BAND_CENTI);
-// Add as needed...
+enum { NUM_DEFAULT_CHANNELS = 1};
+static CONST_TABLE(u4_t, iniChannelFreq)[NUM_DEFAULT_CHANNELS] = {
+        //923200000 | BAND_CENTI,
+        932400000 | BAND_CENTI
+};
 ```
 
 Ensure only the selected subset of frequencies are enabled for AlphaWAN. Disable default TTN/LoRaWAN frequencies if necessary.
