@@ -50,18 +50,19 @@ This means:
 - `GW`: Number of deployed gateways
 - `CH_perGW`: Number of channels each gateway can support
 
+### Example
+
+```
+Channel_planning(24, 50, 13, 8)
+// 24 LoRa channels, 50 concurrent nodes, 13 gateways, 8 channels per GW
+```
+
 ### Output
 
 - `gw_config.csv`: Optimized channel assignments for each gateway
 
 You can use this output to configure gateways manually or via ChirpStack.
 
-### Example
-
-```
-Channel_planning(24, 50, 13, 8)
-% 24 LoRa channels, 50 concurrent nodes, 13 gateways, 8 channels per GW
-```
 
 ## 3. ChirpStack Configuration Steps
 
