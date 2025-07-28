@@ -83,7 +83,7 @@ Once FOTA is disabled, the firmware update option in the **Firmware tab** will b
 
 ### Automatic Updates
 
-Turned on **Enable FOTA** on WisDM.
+Turned on **Enable FOTA** in WisDM.
 
 ---
 
