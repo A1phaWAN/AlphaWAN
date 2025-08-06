@@ -5,7 +5,6 @@ This guide explains how to set up the ChirpStack LoRaWAN network server and run 
 ## Prerequisites
 
 - Docker & Docker Compose installed
-- Python 3.8+
 - Git
 
 
